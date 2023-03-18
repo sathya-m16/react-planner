@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import TaskItem from "./TaskItem";
 import styles from '../styles/modules/app.module.css';
 
-function PageContent() {
+const PageContent = () => {
   const todoList = useSelector((state) => state.todo.todoList);
   const filterStatus = useSelector((state) => state.todo.filterStatus);
   const sortedTaskList = [...todoList];
