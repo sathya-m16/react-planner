@@ -7,7 +7,7 @@ import Button from "./Button";
 import { v4 as uuid } from "uuid";
 import { addTodo, editTodo } from "../slices/plannerSlice";
 
-function PlannerModal({ type, modalOpen, setModalOpen, todo }) {
+const PlannerModal = ({ type, modalOpen, setModalOpen, todo }) => {
   const [task, setTask] = useState("");
   const [status, setStatus] = useState("incomplete");
   const dispatch = useDispatch();
