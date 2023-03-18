@@ -9,7 +9,7 @@ import { toast } from "react-hot-toast";
 import PlannerModal from "./PlannerModal";
 import CheckBoxButton from "./CheckBoxButton";
 
-function TaskItem({ todo }) {
+const TaskItem = ({ todo }) => {
     const dispatch = useDispatch();
     const [checked, setChecked] = useState(false);
     const [editModalOpen, setEditModalOpen] = useState(false);
